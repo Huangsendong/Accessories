@@ -1,0 +1,41 @@
+<div class="module">
+    <div ng-include="'template/xiangtong.html'"></div>
+    <div class="shouye_content">
+        <div class="liebiao">
+            <div ng-include="'template/xiangtong2.html'"></div>
+            <div ng-include="'template/xiangtong3.html'"></div>
+        </div>
+
+        <div class="neirongxinxi">
+            <div class="bootstrap-frm">
+                <h1>Personal Message</h1>
+                <label>
+                    <span>Your Name:</span>
+                    <input type="text" ng-model="names" ng-value="{{name2}}" ng-blur="fm()">
+                    <p>&nbsp;{{noName}}</p>
+                </label>
+                <label>
+                    <span>Your Email:</span>
+                    <input type="text" ng-model="emails"  ng-blur="fe()">
+                    <p>&nbsp;{{noEmail}}</p>
+                </label>
+                <label>
+                    <span>Your Phone:</span>
+                    <input type="text" ng-model="phones" ng-blur="fp()">
+                    <p>&nbsp;{{noPhone}}</p>
+                </label>
+                <label>
+                    <span>Like To Watch:</span>
+                    <input type="text" ng-model="watchs" ng-blur="fw()">
+                    <p>&nbsp;{{noWatch}}</p>
+                </label>
+                <label>
+                    <span>Message:</span>
+                    <textarea name="" ng-model="text"></textarea>
+                </label>
+                <input type="button" class="button" value="send" ng-click="click()">
+                <input type="button" class="button" value="View&nbsp;Message">
+            </div>
+        </div>
+    </div> 
+</div>

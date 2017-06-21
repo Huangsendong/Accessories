@@ -1,0 +1,71 @@
+.login{
+    width:100%;
+    height:20px;
+    background-color:#1E50AE; 
+}
+.login1{
+    margin-top: 10px;
+    float: right;
+}
+.login1 a{
+    font-size: 18px;
+    color:#FFF;
+}
+.head{
+    width:100%;
+    height:220px;
+    background: #FFF url(../img/head/AK4HCAQQqNajvwUYpKPRgAI.png) 
+}
+.module{
+    width:960px;
+    height:auto;
+    margin: 0 auto;
+}
+.logo_zi{
+    color:#FFF;
+    font-weight: bold;
+    font-size: 32px;
+    float: left;
+    line-height: 120px;
+}
+.logo_fuwu{
+    float: right;
+    margin-top: 50px;
+}
+.fuwu_phone{
+    float: left;
+    color:#FFF;
+    line-height: 27px;
+    font-size: 16px;
+    font-weight: 600;
+    margin-right: 10px;
+}
+.fuwu_phone p{
+    text-align: right
+}
+
+.navigation ul{
+    margin-top: 40px;
+}
+.navigation ul li{
+    float: left;
+    width:100px;
+    line-height:40px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #666;
+    text-align: center;
+    margin-right: 15px;
+}
+.navigation ul li:hover{
+    background-color: #1E50AE;
+    border-radius: 40px;
+}
+.navigation ul li:hover{
+    color: #FFF;
+}
+.navigation_xuanze{
+    background-color: #1E50AE;
+    border-radius: 40px;
+    color:#FFF!important ;
+}

@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en" ng-app='myapp'>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="js/angular-1.5.8.js"></script>
+    <script src="js/angular-route.js"></script>
+    <script src="app/index.js"></script>
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/reset.min.css"/>
+    <link rel="stylesheet" href="css/head.css"/>
+    <link rel="stylesheet" href="css/stern.css"/>
+    <link rel="stylesheet" href="css/homePage.css"/>
+</head>
+<body>
+    <div ng-include="'template/head.html'"></div>
+
+    <div  class="clearfix" ng-view></div>
+
+    <div ng-include="'template/stern.html'"></div>
+</body>
+</html>

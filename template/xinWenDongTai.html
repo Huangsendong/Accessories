@@ -1,0 +1,24 @@
+<div class="module">
+    <div ng-include="'template/xiangtong.html'"></div>
+    <div class="shouye_content">
+        <div class="liebiao">
+            <div ng-include="'template/xiangtong2.html'"></div>
+            <div ng-include="'template/xiangtong3.html'"></div>
+        </div>
+
+        <div class="neirongxinxi">
+            <div class="xwdongtai" ng-repeat="xwnr in xwneirong">
+                <a href="#" class="riqi">
+                        <p class="newsListDate">16</p>
+                        <p class="newsListDate newsListDate2">2017/02</p>
+                </a>
+                <div class="xinwei">
+                    <a href="#" class="newsListTitle clearfix" title="{{xwnr.biaoti}}">
+                        {{xwnr.biaoti}}
+                    </a>
+                    <p class="line">{{xwnr.text}}</p>
+                </div>
+            </div>
+        </div>
+    </div> 
+</div>

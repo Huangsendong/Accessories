@@ -1,0 +1,24 @@
+<div class="module">
+    <div ng-include="'template/xiangtong.html'"></div>
+    <div class="shouye_content clearfix">
+        <div class="liebiao">
+            <div ng-include="'template/xiangtong2.html'"></div>
+            <div ng-include="'template/xiangtong3.html'"></div>
+        </div>
+
+        <div class="neirongxinxi">
+            <p>
+                <span class="style1">热销产品</span>
+                <span class="style2">/ HOT</span>
+            </p>
+            <div calss="rexiaocp1">
+                <ul>
+                    <li ng-repeat="rexiaocp in rexcpimg" class="rexiaocp">
+                       <a href="#"><img ng-src="{{rexiaocp.img}}"/></a>
+                        <a href="#"><p>{{rexiaocp.text}}</p></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div> 
+</div>

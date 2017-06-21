@@ -1,0 +1,75 @@
+<div class="module">
+    <div ng-include="'template/xiangtong.html'"></div>
+    <div class="shouye_content clearfix">
+        <div class="liebiao">
+            <div ng-include="'template/xiangtong2.html'"></div>
+            <div class="xinweizixun">
+                <p class="ziyangshi">
+                    新闻资讯
+                </p>
+                <p class="xialaliebiao" ng-repeat="xinxi1 in xinxi">
+                    <a href="#" title="{{xinxi1.ziti}}">{{xinxi1.ziti}}</a>
+                </p>
+            </div> 
+            <div ng-include="'template/xiangtong3.html'"></div>
+        </div>
+
+        <div class="neirongxinxi">
+            <div class="chanpinanli">
+                <p>
+                    <span class="style1">产品案例</span>
+                    <span class="style2">/ PRODUCTS CASES</span>
+                </p>
+                <div class="shoubiaoxinxi clearfix">
+                    <div  class="shoubiaoqiehuan" >
+                        <div class="{{ind==$index?'shoubiaoqiehuan1':''}}" ng-mouseover="fnx($index)" ng-repeat="sb1 in shoubiao">{{sb1.sb}}</div>
+                    </div>
+                    <ul class="shoubiaoimg" ng-repeat="img1 in img" ng-show="$index==ind">
+                        <li ng-repeat="img2 in img1">
+                            <a href="#"><img ng-src="{{img2.tupiao}}"/></a>
+                            <a href="#"><p>{{img2.sbming}}</p></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="zuixindongtai clearfix">
+                <p>
+                    <span class="style1">最新动态</span>
+                    <span class="style2">/ LASTEST NEWS</span>
+                </p>
+                 <div class="dongtaineirong">
+                     <a href="#" class="dongtaitu1">
+                        <img src="img/homePage/dongtai1.jpg" height="197" width="317"/>
+                        <p>在手表上动刀子 品读金雕艺术的胆大心细</p>
+                    </a>
+                     <div class="dongtai2" ng-repeat="dongtai1 in dongtai">
+                         <a class="dongtaitu2" href="#">
+                             <img ng-src="{{dongtai1.dongtaiimg}}"/>
+                             <p>{{dongtai1.p1}}</p>
+                         </a>
+                         <a href="#">
+                            <p>{{dongtai1.p2}}</p>
+                        </a>
+                         <a href="#">
+                            <p>{{dongtai1.p3}}</p>
+                         </a>
+                     </div> 
+                 </div>      
+            </div>
+            <div class="pinpaihezuo">
+                <p>
+                    <span class="style1">品牌合作</span>
+                    <span class="style2">/ BRAND COOPERATION</span>
+                </p>
+                <p class="pinpaineirong">近年来，手表的高利润吸引着历峰加大投入，但旗下部分手表品牌依然必须依靠外购ETA等基本机芯来满足自己的巨大需求。机芯已经成为消费者关注的焦点。</p>
+                <div class="imglunbo">
+                    <div class="imglunbo2">
+                        <a href="#" ng-repeat="pinpaiimg1 in pinpaiimg">
+                            <img ng-repeat="pinpaiimg2 in pinpaiimg1" ng-src="{{pinpaiimg2.img}}"/>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+</div>

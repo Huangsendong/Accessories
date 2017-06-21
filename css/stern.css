@@ -1,0 +1,63 @@
+.stern{
+    width:100%;
+    height:297px;
+    background-color: #202020;
+    margin-top:30px;
+    padding-top: 20px;
+    padding-bottom:10px;
+}
+.relation{
+    margin-top:60px;
+    text-align: center;
+}
+.relation p{
+    width:300px;
+    float: left;
+}
+.relation p img{
+    float: left;
+}
+.relation p span{
+    line-height:30px;
+    display: block;
+    float: left;
+    color:rgb(74, 74, 74);
+    font-size: 16px;
+    margin-left: 10px;
+}
+.interlinkage{
+    margin-top: 60px;
+    text-align: center;
+}
+.interlinkage ul{
+    width:960px;
+    
+}
+.interlinkage ul li{
+    width:66px;
+    height:21px;
+    float: left;
+    margin-left: 81px;
+}
+.interlinkage ul li a{
+    font-size: 16px;
+    font-weight: 600;
+}
+.interlinkage ul li a:hover{
+    color:#FFF;
+}
+.banqian{
+    margin-top: 50px;
+    text-align: center;
+    color:#4a4a4a;
+    font-weight:normal;
+    font-size: 12px;
+}
+.zushi{
+    text-align: center;
+    margin-top: 10px;
+    color:#4a4a4a;
+}
+.zushi a:hover{
+    color:#FFF;
+}

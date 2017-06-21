@@ -1,0 +1,34 @@
+<div class="login">
+    <div class="module">
+        <div class="login1">
+            <a href="#/nava6">登录</a>&nbsp;&nbsp;
+            <a href="#/nava7">注册</a>
+        </div>
+    </div>
+</div>
+<div class="head" ng-controller="head">
+    <div class="module">
+        <div class="logo clearfix">
+            <div class="logo_zi">
+                <font>Accessories</font>
+                &nbsp;&nbsp;
+                <font>Design</font>
+            </div>
+            <div class="logo_fuwu">
+                <div class="fuwu_phone">
+                    <p>服务热线</p>
+                    <number>020-000-0000</number>
+                </div>
+                <img src="img/head/AD0Ihd_PBhAEGAAg5L6QxQUojI2TmgUwNDg3.png" height="55" width="52"/>
+            </div>
+        </div>
+        <div class="navigation">
+            <ul>
+                <a   ng-repeat="arrs in arr" href="{{arrs.href}}">
+                    <li class="{{inde==$index?'navigation_xuanze':''}}" ng-click="fn($index)">
+                        {{arrs.content}}
+                    </li>
+                </a>
+            </ul>
+        </div>
+    </div>
